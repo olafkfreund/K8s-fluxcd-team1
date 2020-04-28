@@ -5,8 +5,8 @@ metadata:
   labels:
     app: backend
 spec:
-  minReadySeconds: 5
-  revisionHistoryLimit: 5
+  minReadySeconds: 6
+  revisionHistoryLimit: 6
   progressDeadlineSeconds: 60
   strategy:
     rollingUpdate:
