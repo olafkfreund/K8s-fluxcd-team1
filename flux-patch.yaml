@@ -13,7 +13,7 @@ spec:
       $setElementOrder/containers:
       - name: podinfod
       containers:
-      - image: stefanprodan/podinfo:podinfo-arm64
+      - image: stefanprodan/podinfo:1.7.1
         name: podinfod
 ---
 apiVersion: apps/v1
@@ -30,5 +30,5 @@ spec:
       $setElementOrder/containers:
       - name: podinfod
       containers:
-      - image: stefanprodan/podinfo:podinfo-arm64
+      - image: stefanprodan/podinfo:1.7.1
         name: podinfod
