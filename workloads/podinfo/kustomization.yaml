@@ -1,0 +1,7 @@
+resources:
+  - hpa.yaml
+  - deployment.yaml
+  - service.yaml
+
+commonLabels:
+  app: podinfo
