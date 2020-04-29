@@ -1,8 +1,8 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  namespace: "team1"
-  name: "podinfo-ingress"
+  namespace: team1
+  name: podinfo
   labels:
     app: podinfo
   annotations:
