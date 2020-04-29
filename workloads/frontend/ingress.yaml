@@ -5,7 +5,7 @@ metadata:
   name: "frontend"
 spec:
   rules:
-  - host: "frontend.192.168.68.211.nip.io"
+  - host: "team1.192.168.68.211.nip.io"
     http:
       paths:
         - backend:
