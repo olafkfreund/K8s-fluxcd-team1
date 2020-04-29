@@ -9,6 +9,6 @@ spec:
     http:
       paths:
         - backend:
-            serviceName: frontend
+            serviceName: podinfo
             servicePort: 80
           path: /
