@@ -32,15 +32,10 @@ spec:
         - name: http-metrics
           containerPort: 9797
           protocol: TCP
-        - name: grpc
-          containerPort: 9999
-          protocol: TCP
         command:
         - ./podinfo
         - --port=9898
         - --port-metrics=9797
-        - --grpc-port=9999
-        - --grpc-service-name=podinfo
         - --level=info
         - --random-delay=false
         - --random-error=false
