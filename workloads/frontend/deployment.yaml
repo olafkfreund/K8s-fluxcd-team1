@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: podinfod
-          image: stefanprodan/podinfo:podinfo-arm64
+          image: stefanprodan/podinfo:podinfo-arm
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 9898
