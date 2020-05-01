@@ -1,7 +1,6 @@
+namespace: team1
 resources:
-  - hpa.yaml
-  - deployment.yaml
-  - service.yaml
+  - github.com/olafkfreund/podinfo-arm/kustomize
   - ingress.yaml
 
 commonLabels:

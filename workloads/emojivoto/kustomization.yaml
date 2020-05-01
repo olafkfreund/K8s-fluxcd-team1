@@ -1,0 +1,5 @@
+namespace: team1
+resources:
+  - namespace.yaml
+bases:
+  - github.com/olafkfreund/emojivoto/kustomize/deployment
