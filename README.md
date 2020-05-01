@@ -1,7 +1,7 @@
 # This is a part of Fluxcd mutli-tenancy demo with Linkerd and Flagger
 
 Demo repository for managing a multi-tenant cluster with Flux and Kustomize,
-part of [fluxcd/multi-tenancy](https://github.com/olafkfreund/K8s-fluxcd).
+part of [Fluxcd with Linkerd and Flagger](https://github.com/olafkfreund/K8s-fluxcd).
 
 This repository uses [GitHub Actions](https://github.com/marketplace/actions/kubernetes-toolset)
 to validate the Kubernetes manifests with kubeval and a set of Open Policy Agent
