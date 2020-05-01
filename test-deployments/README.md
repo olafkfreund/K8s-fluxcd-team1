@@ -6,7 +6,7 @@ This guide shows you how to use Linkerd and Flagger to automate canary deploymen
 
 
 ```bash
-kubectl apply -f ./podinfo-canary.yaml
+kubectl apply -k ./canary/
 ```
 
 When the canary analysis starts, Flagger will call the pre-rollout webhooks before routing traffic to the canary.
@@ -271,6 +271,7 @@ This is particularly useful for frontend applications that require session affin
 
 Edit podinfo canary analysis, set the provider to `nginx`, add the ingress reference,
 remove the max/step weight and add the match conditions and iterations:
+That's already done for You in ab.yaml but for ref:
 
 ```yaml
 apiVersion: flagger.app/v1beta1
@@ -338,6 +339,12 @@ The above configuration will run an analysis for ten minutes targeting users tha
 a `canary` cookie set to `always` or those that call the service using the `X-Canary: always` header.
 
 **Note** that the load test now targets the external address and uses the canary cookie.
+
+Update it with:
+
+```bash
+kubectl apply -k ./ab-deployment/
+```
 
 Trigger a canary deployment by updating the container image:
 
