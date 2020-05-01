@@ -14,4 +14,4 @@ jobs:
         uses: stefanprodan/kube-tools@v1
         with:
           command: |
-            kustomize build . | conftest test -p .github/policy -
+            kustomize build . | conftest test -p .github/workflows/policy -
