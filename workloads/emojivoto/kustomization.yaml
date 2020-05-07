@@ -1,4 +1,4 @@
-namespace: voto
+namespace: emojivoto
 resources:
   - namespace.yaml
 bases:
