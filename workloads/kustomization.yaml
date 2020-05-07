@@ -1,0 +1,6 @@
+namespace: team1
+bases:
+  - ./standalone/
+  - ./emojivoto/
+  - ./frontend/
+  - ./backend/
