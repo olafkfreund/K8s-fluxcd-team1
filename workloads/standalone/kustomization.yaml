@@ -1,5 +1,6 @@
-namespace: team1
+namespace: podinfo
 resources:
+  - namespace.yaml
   - github.com/olafkfreund/podinfo-arm/kustomize
   - ingress.yaml
 

@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: web-ingress
-  namespace: emojivoto
+  namespace: voto
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/upstream-vhost: $service_name.$namespace.svc.cluster.local:8084
@@ -12,7 +12,7 @@ metadata:
       proxy_hide_header l5d-server-id;
 spec:
   rules:
-  - host: team1-vote.home.freundcloud.org.uk
+  - host: team1-voto.home.freundcloud.org.uk
     http:
       paths:
       - backend:
