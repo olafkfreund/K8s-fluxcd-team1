@@ -1,8 +1,8 @@
 namespace: podinfo
 resources:
   - namespace.yaml
-  - github.com/olafkfreund/podinfo-arm/kustomize
   - ingress.yaml
-
+bases:
+  - github.com/olafkfreund/podinfo-arm/kustomize
 commonLabels:
   app: podinfo
