@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: podinfo
-  namespace: test
+  namespace: podinfo
   labels:
     app: podinfo
   annotations:

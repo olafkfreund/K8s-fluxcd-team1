@@ -1,5 +1,5 @@
 namespace: emojivoto
 resources:
-  - namespace.yaml
+  - ingress-emojivoto.yaml
 bases:
   - github.com/olafkfreund/emojivoto/kustomize/deployment
